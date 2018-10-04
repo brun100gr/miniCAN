@@ -4,7 +4,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);      // open the serial port at 115200 bps:    
   pinMode(interruptPin, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), my_interrupt_handler, LOW);
+  attachInterrupt(digitalPinToInterrupt(interruptPin), my_interrupt_handler, FALLING);
 }
 
 void loop() {
